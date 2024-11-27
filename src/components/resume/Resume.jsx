@@ -13,7 +13,7 @@ const Resume = () => {
         <Title text='My Resume' />
       </div>
       <div className="pb-20">
-        <ul className='w-full md:w-3/4 lg:w-2/3 mx-auto grid grid-cols-1 md:grid-cols-3 '>
+        <ul className='w-full md:w-3/4 lg:w-2/3 mx-auto grid grid-cols-1 sm:grid-cols-3 '>
           <li onClick={()=>{
             setSkills(true)
             setEducation(false)
