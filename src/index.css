@@ -8,7 +8,7 @@
         @apply w-11 h-11 bg-black bg-opacity-80 md:bg-opacity-25 text-gray-200 text-xl inline-flex justify-center items-center rounded-md shadow-shadowOne hover:bg-opacity-60 md:hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300
     }
     .bannerToggleIcon{
-        @apply w-8 h-8 bg-black bg-opacity-80 md:bg-opacity-25 text-gray-200 text-base inline-flex justify-center items-center rounded-md shadow-shadowOne hover:bg-opacity-60 md:hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300
+        @apply w-8 h-8 bg-black bg-opacity-80 md:bg-opacity-25 text-gray-200 text-base inline-flex justify-center items-center rounded-md shadow-lg hover:bg-opacity-60 md:hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300
     }
     .skillsIcon{
         @apply w-16 h-16 sm:w-20 md:h-20 bg-black bg-opacity-25 text-gray-200 text-3xl md:text-5xl inline-flex justify-center items-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300
