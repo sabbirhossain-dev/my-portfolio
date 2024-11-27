@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .bannerIcon{
+        @apply w-11 h-11 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex justify-center items-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300
+    }
+    .skillsIcon{
+        @apply w-20 h-20 bg-black bg-opacity-25 text-gray-200 text-5xl inline-flex justify-center items-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300
+    }
+    .resumeli{
+        @apply w-full h-16 bg-black bg-opacity-25 text-gray-300 flex justify-center items-center 
+        text-xl cursor-pointer hover:bg-opacity-50 duration-300 border-[1px] border-transparent
+    }
+    .contactInput{
+        @apply w-full h-12 rounded-lg border-[1px] border-b-gray-500 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none border-b-transparent duration-300 border-none
+    }
+    .textArea{
+        @apply w-full rounded-lg border-[1px] border-b-gray-500 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none border-b-transparent duration-300 resize-none border-none
+    }
+}
+
+.active{
+  color:#ff014f;
+}
