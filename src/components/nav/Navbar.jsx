@@ -2,8 +2,8 @@ import React, { useDebugValue, useState } from 'react'
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter} from "react-icons/fa";
-import sabbirLogoo2 from '../../assets/images/sabbirLogoo2.png'
-import sabbirLogo from '../../assets/images/SabbirLogo.png'
+import sabbirLogoo from '../../assets/images/sabbirLogoo2.png'
+import sabbirLogo from '../../assets/images/sabbirLogo.png'
 
 import { navData } from '../../constans'
 import { FaBars} from 'react-icons/fa';
@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <div className=''>
            <Link to='/' >
-           <img src={sabbirLogoo2} alt='logo' className='w-[70px] lg:w-28 h-auto'/>
+           <img src={sabbirLogoo} alt='logo' className='w-[70px] lg:w-28 h-auto'/>
            {/* <img src={sabbirLogo} alt='logo' className='w-[70px] lg:w-28 h-auto'/> */}
            </Link>
             {/* <h2 className='text-2xl font-mono font-semibold uppercase'>Sabbir</h2> */}
