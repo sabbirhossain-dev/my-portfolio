@@ -3,6 +3,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import sabbir from '../../assets/images/sabbir.png'
 import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter} from "react-icons/fa";
 import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 
 
@@ -13,7 +14,11 @@ const Home = () => {
       <div  className='flex flex-col gap-6 md:gap-10 md:flex-row items-center lg:gap-16'>
 
       {/* left side */}
-      <div className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-6 md:pt-12 lg:pt-8 '>
+      <motion.div 
+      initial={{y:"100%", opacity:0}}
+    animate={{y:0, opacity:1}}
+    transition={{duration:.6, delay:.3}}
+      className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-6 md:pt-12 lg:pt-8 '>
           <p className='text-lightText text-base lg:text-md font-xl'>WELCOME TO MY PORTFOLIO</p>
           <h1 className='font-bold text-4xl md:text-3xl lg:text-5xl'>I'm <span className='text-designColor'>Md Sabbir Hossain</span></h1>
           <h3 className='text-2xl md:text-2xl lg:text-4xl text-white font-bold'>a  
@@ -53,14 +58,18 @@ const Home = () => {
                 <li className='bannerIcon'><FaTwitter /></li>
               </ul>
             </div>
-      </div>
+      </motion.div>
 
 
 {/* right side */}
-      <div className='w-full xl:w-1/2 flex justify-center items-center relative pt-8'>
+      <motion.div
+      initial={{x:"100%", opacity:0}}
+    animate={{x:0, opacity:1}}
+    transition={{duration:.6, delay:.3}}
+       className='w-full xl:w-1/2 flex justify-center items-center relative pt-8'>
             <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[420px] xl:h-[520px] z-10 opacity-95' />
             <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[300px]  lg:h-[350px] lg:w-[430px] bg-gradient-to-r from-slate-950 to-gray-800 opacity-30 shadow-shadowOne rounded-md'></div>
-        </div>
+        </motion.div>
       
     </div>
     </section>

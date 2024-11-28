@@ -7,7 +7,7 @@ const Resume = () => {
     const [education, setEducation] = useState(false)
     const [experience, setExperience] = useState(false)
   return (
-    <div id="resume" className='py-20 border-b border-black'>
+    <div id="resume" className='py-16 border-b border-gray-600'>
       <div className='text-center mb-16'>
         <h2 className='text-sm font-light tracking-widest text-designColor mb-1'>Here is My Resume</h2>
         <Title text='My Resume' />
