@@ -9,11 +9,11 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
-    <section id='home' className='w-full h-auto pb-20 border-b-[1px] border-black'>
+    <section id='home' className='w-full h-auto pb-20 border-b-[1px] border-gray-600'>
       <div  className='flex flex-col gap-6 md:gap-10 md:flex-row items-center lg:gap-16'>
 
       {/* left side */}
-      <div className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-10 md:pt-12 lg:pt-8 '>
+      <div className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-6 md:pt-12 lg:pt-8 '>
           <p className='text-lightText text-base lg:text-md font-xl'>WELCOME TO MY PORTFOLIO</p>
           <h1 className='font-bold text-4xl md:text-3xl lg:text-5xl'>I'm <span className='text-designColor'>Md Sabbir Hossain</span></h1>
           <h3 className='text-2xl md:text-2xl lg:text-4xl text-white font-bold'>a  
@@ -27,12 +27,12 @@ const Home = () => {
             delaySpeed={1000}
             
           /></h3>
-          <p className='text-sm md:text-sm lg:text-base text-gray-300 w-auto md:w-auto lg:w-[520px] py-3'>Hi Dear, I am a Professional Frontend Developer. My experience of
+          <p className='text-sm md:text-sm lg:text-base text-gray-300 w-auto md:w-auto lg:w-[520px] py-2'>Hi Dear, I am a Professional Frontend Developer. My experience of
             Frontend Development is over 1 year. I usually make high quality and
             Responsive Website for both mobile and desktop platforms. I will
             provide quality and satisfaction work.</p>
 
-            <div className='flex items-center gap-4 md:mt-3 mt-6'>
+            <div className='flex items-center gap-4 mt-3 md:mt-3 lg:mt-6'>
               <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base  bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all'><Link
                     to='portfolio'
                     activeClass="active" 
@@ -44,9 +44,9 @@ const Home = () => {
 
             </div>
 
-            <div className='mt-7'>
+            <div className='mt-4 lg:mt-7'>
               <p className='uppercase text-base'>get in touch</p>
-              <ul className='flex gap-4 mt-4'>
+              <ul className='flex gap-4 mt-3 lg:mt-4'>
                 <li className='bannerIcon'><FaFacebookF /></li>
                 <li className='bannerIcon'><FaLinkedinIn /></li>
                 <li className='bannerIcon'><FaInstagram /></li>

@@ -16,13 +16,13 @@ const Skills = () => {
   return (
     <div>
       <div className='text-center'>
-        <h3 className='text-3xl font-medium py-20'>My Skills</h3>
-        <div className='w-full md:w-4/5 lg:4/6 mx-auto'>
-            <ul className='gap-7 md:gap-10 grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-6'>
+        <h3 className='text-3xl text-designColor font-medium py-20'>My Skills</h3>
+        <div className='w-full md:w-4/5 lg:4/6 mx-auto px-1'>
+            <ul className='gap-5 md:gap-10 grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-6'>
                 <li className='skillsIcon animate-pulse'><FaHtml5 /></li>
                 <li className='skillsIcon animate-pulse'><IoLogoCss3 /></li>
                 <li className='skillsIcon animate-pulse'><IoLogoJavascript /></li>
-                <li className='skillsIcon animate-pulse'><FaReact /></li>
+                <li className='skillsIcon animate-pulse '><FaReact /></li>
                 <li className='skillsIcon animate-pulse'><TbBrandRedux /></li>
                 <li className='skillsIcon animate-pulse'><SiJquery /></li>
                 <li className='skillsIcon animate-pulse'><RiNextjsLine /></li>

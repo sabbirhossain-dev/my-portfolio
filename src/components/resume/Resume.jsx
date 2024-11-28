@@ -18,18 +18,18 @@ const Resume = () => {
             setSkills(true)
             setEducation(false)
             setExperience(false)
-          }} className={`${skills ? 'border-gray-500':''} resumeli`}>Professional Skills</li>
+          }} className={`${skills ? 'border-gray-500 text-designColor':''} resumeli`}>Professional Skills</li>
           <li onClick={()=>{
             setSkills(false)
             setEducation(true)
             setExperience(false)
-          }} className={`${education ? 'border-gray-500':''} resumeli`}>Education</li>
+          }} className={`${education ? 'border-gray-500 text-designColor':''} resumeli`}>Education</li>
           <li
           onClick={()=>{
             setSkills(false)
             setEducation(false)
             setExperience(true)
-          }} className={`${experience ? 'border-gray-500':''} resumeli`}>Experience</li>
+          }} className={`${experience ? 'border-gray-500 text-designColor':''} resumeli`}>Experience</li>
         </ul>
 
         {skills && <Skills />}
