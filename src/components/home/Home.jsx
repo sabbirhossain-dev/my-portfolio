@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import sabbir from '../../assets/images/sabbir.png'
+import sabbir2 from '../../assets/images/sabbir2.png'
 import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter} from "react-icons/fa";
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
@@ -13,12 +14,18 @@ const Home = () => {
     <section id='home' className='w-full h-auto pb-20 border-b-[1px] border-gray-600'>
       <div  className='flex flex-col gap-6 md:gap-10 md:flex-row items-center lg:gap-16'>
 
+      {/* toggle image */}
+
+      <div className='flex md:hidden items-center justify-center mt-12 w-[220px] h-[220px] bg-gradient-to-br from-purple-800 to-designColor rounded-full'>
+        <img src={sabbir2} alt='banner picture' className='w-full h-[240px] -mt-6 rounded-full'/>
+      </div>
+
       {/* left side */}
       <motion.div 
       initial={{y:"100%", opacity:0}}
     animate={{y:0, opacity:1}}
     transition={{duration:.6, delay:.3}}
-      className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-6 md:pt-12 lg:pt-8 '>
+      className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-6 md:pt-12 lg:pt-16 '>
           <p className='text-lightText text-base lg:text-md font-xl'>WELCOME TO MY PORTFOLIO</p>
           <h1 className='font-bold text-4xl md:text-3xl lg:text-5xl'>I'm <span className='text-designColor'>Md Sabbir Hossain</span></h1>
           <h3 className='text-2xl md:text-2xl lg:text-4xl text-white font-bold'>a  
@@ -37,7 +44,7 @@ const Home = () => {
             Responsive Website for both mobile and desktop platforms. I will
             provide quality and satisfaction work.</p>
 
-            <div className='flex items-center gap-4 mt-3 md:mt-3 lg:mt-6'>
+            <div className='flex items-center gap-4 mt-3 md:mt-3 lg:mt-4'>
               <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base  bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all'><Link
                     to='portfolio'
                     activeClass="active" 
@@ -45,11 +52,11 @@ const Home = () => {
                     smooth={true} 
                     offset={-95} 
                     duration={500}>See My Portfolio</Link></button>
-              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all'><a href=' https://drive.google.com/file/d/1Kx9FT4kYcLWiQfxoytHDYOhMQa1IZ9R8/view?usp=sharing' target='_blank'>Download Resume</a></button>
+              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all '><a href=' https://drive.google.com/file/d/1Kx9FT4kYcLWiQfxoytHDYOhMQa1IZ9R8/view?usp=sharing' target='_blank'>Download Resume</a></button>
 
             </div>
 
-            <div className='mt-4 lg:mt-7'>
+            <div className='mt-4 lg:mt-6'>
               <p className='uppercase text-base'>get in touch</p>
               <ul className='flex gap-4 mt-3 lg:mt-4'>
                 <li className='bannerIcon'><FaFacebookF /></li>
@@ -66,9 +73,9 @@ const Home = () => {
       initial={{x:"100%", opacity:0}}
     animate={{x:0, opacity:1}}
     transition={{duration:.6, delay:.3}}
-       className='w-full xl:w-1/2 flex justify-center items-center relative pt-8'>
+       className='hidden  w-full xl:w-1/2 md:flex justify-center items-center relative pt-8'>
             <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[420px] xl:h-[520px] z-10 opacity-95' />
-            <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[300px]  lg:h-[350px] lg:w-[430px] bg-gradient-to-r from-slate-950 to-gray-800 opacity-30 shadow-shadowOne rounded-md'></div>
+            <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[300px]  lg:h-[350px] lg:w-[430px] bg-gradient-to-r from-slate-950 to-gray-900 opacity-30 shadow-xl rounded-lg'></div>
         </motion.div>
       
     </div>

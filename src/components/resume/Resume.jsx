@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Title from '../Title'
 import Skills from './Skills'
+import Education from './Education'
 
 const Resume = () => {
   const [skills, setSkills] = useState(true)
@@ -32,7 +33,9 @@ const Resume = () => {
           }} className={`${experience ? 'border-gray-500 text-designColor':''} resumeli`}>Experience</li>
         </ul>
 
-        {skills && <Skills />}
+        {skills && <Skills /> }
+        {education && <Education />}
+        
       </div>
     </div>
   )

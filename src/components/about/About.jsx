@@ -24,7 +24,7 @@ const About = () => {
           whileInView={{y:0, opacity:1}}
           transition={{duration:.5, delay:.2}} 
          className='w-full lg:w-2/3 flex flex-col gap-2'>
-          <h1 className='text-md sm:text-xl md:text-3xl font-normal pb-4 md:pb-6'><span className='text-designColor font-medium'>Md Sabbir Hossain, </span>a Frontend Developer</h1>
+          <h1 className='text-md sm:text-xl md:text-3xl font-normal pb-4 md:pb-6'><span className='text-designColor font-medium text-lg sm:text-xl md:text-3xl'>Md Sabbir Hossain, </span>a Frontend Developer</h1>
           <p className='text-sm md:text-base'>I am a Professional Frontend Developer. I usually make high quality and
           Responsive Website for both mobile and desktop platforms. I will
           provide quality and satisfaction work.</p>
@@ -38,7 +38,7 @@ const About = () => {
 
         {/* right side */}
         <motion.div
-        initial={{x:"100%", opacity:0}}
+        initial={{x:"80%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} 
          className='w-full lg:w-1/3 flex flex-col'>
@@ -68,7 +68,7 @@ const About = () => {
          className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 sm:gap-8 lg:gap-10'>
 
         <motion.div 
-          initial={{x:"-100%", opacity:0}}
+          initial={{x:"-50%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} className='flex flex-col gap-2 md:gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
         <FaLaptopCode  className='group-hover:text-designColor transition-all duration-300 text-[45px] md:text-[50px]'/>
@@ -81,7 +81,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-        initial={{x:"100%", opacity:0}}
+        initial={{x:"60%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} 
          className='flex flex-col gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
@@ -94,7 +94,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-        initial={{x:"-100%", opacity:0}}
+        initial={{x:"-40%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} 
          className='flex flex-col gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
@@ -105,7 +105,7 @@ const About = () => {
         </motion.div>
 
         <motion.div 
-        initial={{x:"100%", opacity:0}}
+        initial={{x:"70%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} 
         className='flex flex-col gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>

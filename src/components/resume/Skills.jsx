@@ -6,7 +6,6 @@ import { FaReact } from "react-icons/fa";
 import { TbBrandRedux } from "react-icons/tb";
 import { SiJquery,SiAdobexd } from "react-icons/si";
 import { RiNextjsLine,RiTailwindCssFill } from "react-icons/ri";
-import { motion } from 'framer-motion';
 
 
 
@@ -16,10 +15,8 @@ const Skills = () => {
     
   return (
     <div>
-      <motion.div
-      initial={{ opacity:0}}
-          animate={{ opacity:1}}
-          transition={{duration:.5, delay:.2}}  
+      <div
+      
       className='text-center'>
         <h3 className='text-3xl text-designColor font-medium py-16'>My Skills</h3>
         <div className='w-full md:w-4/5 lg:4/6 mx-auto px-1'>
@@ -37,7 +34,7 @@ const Skills = () => {
                 <li className='skillsIcon animate-pulse'><SiAdobexd /></li>
             </ul>
         </div>
-      </motion.div>
+      </div>
       
     </div>
   )
