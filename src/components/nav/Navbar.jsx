@@ -50,7 +50,7 @@ const Navbar = () => {
             initial={{ opacity:0}}
             whileInView={{ opacity:1}}
             transition={{duration:.6, delay:.1}}
-            className='flex flex-col w-4/5 py-7 h-auto mr-[-20px] bg-gradient-to-b from-gray-950 to-gray-700 gap-2 absolute top-20 right-0 lg:hidden'>
+            className='flex flex-col w-4/5 py-7 h-screen mr-[-20px] bg-gradient-to-b from-gray-950 to-gray-700 gap-2 absolute top-20 right-0 lg:hidden'>
               {navData.map(({id,title,link})=>{
                     return <li key={id} className='text-md text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300 w-full shadow-xl text-left px-8 py-2'>
                     <Link  onClick={()=>{setToggle(false)}}

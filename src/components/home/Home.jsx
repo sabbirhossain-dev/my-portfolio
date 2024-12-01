@@ -5,6 +5,9 @@ import sabbir2 from '../../assets/images/sabbir2.png'
 import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter} from "react-icons/fa";
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
+import { BsArrowDown } from 'react-icons/bs';
+import { LuDownload } from "react-icons/lu";
+
 
 
 
@@ -52,7 +55,8 @@ const Home = () => {
                     smooth={true} 
                     offset={-95} 
                     duration={500}>See My Portfolio</Link></button>
-              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all '><a href=' https://drive.google.com/file/d/1Kx9FT4kYcLWiQfxoytHDYOhMQa1IZ9R8/view?usp=sharing' target='_blank'>Download Resume</a></button>
+              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all'><a href=' https://drive.google.com/file/d/1Kx9FT4kYcLWiQfxoytHDYOhMQa1IZ9R8/view?usp=sharing' target='_blank' className='flex justify-center items-center gap-2'>Download Resume
+              <LuDownload className='text-designColor animate-bounce'/></a></button>
 
             </div>
 
@@ -77,8 +81,20 @@ const Home = () => {
             <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[420px] xl:h-[520px] z-10 opacity-95' />
             <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[300px]  lg:h-[350px] lg:w-[430px] bg-gradient-to-r from-slate-950 to-gray-900 opacity-30 shadow-xl rounded-lg'></div>
         </motion.div>
+
       
     </div>
+        <div className='hidden md:flex justify-center items-center'>
+        <button className='px-2 py-4 rounded-full  border border-gray-600 text-designColor animate-bounce'>
+        <Link
+                    to='about'
+                    activeClass="active" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-95} 
+                    duration={500}><BsArrowDown size={26} /></Link>
+        </button>
+        </div>
     </section>
   )
 }

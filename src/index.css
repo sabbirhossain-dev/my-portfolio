@@ -13,6 +13,10 @@
     .skillsIcon{
         @apply w-16 h-16 sm:w-20 md:h-20 bg-black bg-opacity-25 text-gray-200 text-3xl md:text-5xl inline-flex justify-center items-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300
     }
+
+    .skillsIcons{
+        @apply flex justify-center items-center flex-col gap-2 md:gap-5 p-2 bg-black bg-opacity-35 w-20 h-20 md:w-36 md:h-36 rounded-lg shadow-lg
+    }
     .resumeli{
         @apply w-full h-16 bg-black bg-opacity-25 text-gray-300 flex justify-center items-center 
         text-xl cursor-pointer hover:bg-opacity-50 duration-300 border-[1px] border-transparent
