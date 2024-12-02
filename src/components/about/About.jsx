@@ -8,7 +8,7 @@ import Title from '../Title'
 
 const About = () => {
   return (
-    <section id="about" className='py-10 lg:py-20 overflow-x-hidden'>
+    <section id="about" className='py-10 lg:py-20 overflow-x-hidden border-b border-gray-600'>
       <div>
       <div>
         <Title text='Know Me More'  />

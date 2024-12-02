@@ -30,7 +30,7 @@ const Home = () => {
     transition={{duration:.6, delay:.3}}
       className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-6 md:pt-12 lg:pt-16 '>
           <p className='text-lightText text-base lg:text-md font-xl'>WELCOME TO MY PORTFOLIO</p>
-          <h1 className='font-bold text-4xl md:text-3xl lg:text-5xl'>I'm <span className='text-designColor'>Md Sabbir Hossain</span></h1>
+          <h1 className='font-bold text-2xl md:text-3xl lg:text-5xl'>I'm <span className='text-designColor text- lg:text-5xl'>Md Sabbir Hossain</span></h1>
           <h3 className='text-2xl md:text-2xl lg:text-4xl text-white font-bold'>a  
           <Typewriter
             words={[' Frontend Developer', ' Web Designer', ' Photographer']}
@@ -63,9 +63,12 @@ const Home = () => {
             <div className='mt-4 lg:mt-6'>
               <p className='uppercase text-base'>get in touch</p>
               <ul className='flex gap-4 mt-3 lg:mt-4'>
-                <li className='bannerIcon'><FaFacebookF /></li>
-                <li className='bannerIcon'><FaLinkedinIn /></li>
-                <li className='bannerIcon'><FaInstagram /></li>
+                <li className='bannerIcon'><a href='https://www.facebook.com/sabbir.hossain.445886/' target='_blank'><FaFacebookF /></a></li>
+
+                <li className='bannerIcon'><a href="https://www.linkedin.com/in/md-sabbir-hossain-5777602a4/" target='_blank'><FaLinkedinIn /></a></li>
+
+                <li className='bannerIcon'><a href='https://www.instagram.com/___sabbirhossain/' target='_blank'><FaInstagram /></a></li>
+
                 <li className='bannerIcon'><FaTwitter /></li>
               </ul>
             </div>

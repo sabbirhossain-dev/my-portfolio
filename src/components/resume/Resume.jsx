@@ -11,8 +11,8 @@ const Resume = () => {
 
   return (
     <div id="resume" className='py-5 border-b border-gray-600 overflow-x-hidden'>
-      <div className='text-center mb-16'>
-        <h2 className='text-sm font-light tracking-widest text-designColor mb-1'>Here is My Resume</h2>
+      <div className='text-center py-6 md:py-10 lg:py-16'>
+        {/* <h2 className='text-sm font-light tracking-widest text-designColor mb-1'>Here is My Resume</h2> */}
         <Title text='My Resume' />
       </div>
       <div className="pb-10">
