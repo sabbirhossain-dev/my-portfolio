@@ -2,7 +2,7 @@ import React from 'react'
 
 import Title from '../Title'
 import gym from '../../assets/images/gym.png'
-import hunt from '../../assets/images/hunt.png'
+// import hunt from '../../assets/images/hunt.png'
 import beatls from '../../assets/images/beatls2.png'
 import bizzency from '../../assets/images/bizzency2.png'
 
