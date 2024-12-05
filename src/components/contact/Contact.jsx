@@ -19,14 +19,14 @@ const Contact = () => {
       <div 
       
       className='flex flex-col
-      sm:flex-row gap-10 md:gap-20 pt-8 md:pt-20'>
+      lg:flex-row gap-10 md:gap-20 pt-8 md:pt-20'>
 
 
 {/* left part */}
-      <div className='w-full md:w-1/2 flex flex-col gap-3 md:gap-4 px-1 md:px-8 pt-2 pb-6 shadow-xl rounded-md'>
+      <div className='w-full lg:w-1/2 flex flex-col gap-3 md:gap-4 px-1 md:px-8 pt-2 pb-6 shadow-xl rounded-md'>
         <div></div>
-        <h2 className='text-2xl md:text-2xl text-gray-50 font-semibold'>Md Sabbir Hossain</h2>
-        <p className='text-lg font-medium'>Frontend Developer</p>
+        <h2 className='text-2xl md:text-3xl text-gray-50 font-semibold'>Md Sabbir Hossain</h2>
+        <p className='text-lg md:text-xl font-medium'>Frontend Developer</p>
        <div className='mt-3 flex flex-col gap-3'>
        <p className='flex gap-4 items-center'><FaPhoneAlt className='text-md md:text-xl text-designColor' /><span className='text-md md:text-xl'>01981441578</span></p>
         <p className='flex gap-4 items-center'><MdEmail className='text-md md:text-xl text-designColor' /><span className='text-md md:text-xl'>hossainsabbir309@gmail.com</span></p>
@@ -48,7 +48,7 @@ const Contact = () => {
 
       
 {/* form part */}
-      <div className='w-full md:w-1/2 shadow-xl rounded-md px-1 md:px-10 pt-2 pb-10'>
+      <div className='w-full lg:w-1/2 shadow-xl rounded-md px-1 md:px-10 pt-2 pb-10'>
         <FormPart />
 
       </div>

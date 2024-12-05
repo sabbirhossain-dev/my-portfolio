@@ -22,7 +22,7 @@ const Skills = () => {
       
       className='pb-10 md:pb-16'>
         <h3 className='text-2xl tracking-wider text-designColor opacity-90 font-medium pb-12 pt-5 uppercase'>My Skills</h3>
-        <div className=' px-1 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5 sm:gap-16'>
+        <div className=' px-1 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-16 md:gap-10'>
            <motion.div
            initial={{x:"100%", opacity:0}}
             whileInView={{x:0, opacity:1}}

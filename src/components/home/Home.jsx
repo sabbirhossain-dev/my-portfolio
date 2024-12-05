@@ -30,7 +30,7 @@ const Home = () => {
     transition={{duration:.6, delay:.3}}
       className='w-full md:w-1/2 flex flex-col gap-3 lg:gap-4 pt-6 md:pt-12 lg:pt-16 '>
           <p className='text-lightText text-base lg:text-md font-xl'>WELCOME TO MY PORTFOLIO</p>
-          <h1 className='font-bold text-2xl md:text-3xl lg:text-5xl'>I'm <span className='text-designColor text- lg:text-5xl'>Md Sabbir Hossain</span></h1>
+          <h1 className='font-bold text-2xl md:text-3xl lg:text-5xl md:w-80 lg:w-auto'>I'm <span className='text-designColor text- lg:text-5xl'>Md Sabbir Hossain</span></h1>
           <h3 className='text-2xl md:text-2xl lg:text-4xl text-white font-bold'>a  
           <Typewriter
             words={[' Frontend Developer', ' Web Designer', ' Photographer']}
@@ -48,14 +48,15 @@ const Home = () => {
             provide quality and satisfaction work.</p>
 
             <div className='flex items-center gap-4 mt-3 md:mt-3 lg:mt-4'>
-              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base  bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all'><Link
+              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base md:w-28 lg:w-auto  bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all'><Link
                     to='portfolio'
                     activeClass="active" 
                     spy={true} 
                     smooth={true} 
                     offset={-95} 
                     duration={500}>See My Portfolio</Link></button>
-              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all'><a href=' https://drive.google.com/file/d/1Kx9FT4kYcLWiQfxoytHDYOhMQa1IZ9R8/view?usp=sharing' target='_blank' className='flex justify-center items-center gap-2'>Download Resume
+
+              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs md:w-36 lg:w-auto lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all'><a href='https://drive.google.com/file/d/12N_WEHMrJIK98Hb3TDS2EzRakjGvVzdz/view?usp=sharing' target='_blank' className='flex justify-center items-center gap-2'>Download Resume
               <LuDownload className='text-designColor animate-bounce'/></a></button>
 
             </div>
@@ -81,8 +82,9 @@ const Home = () => {
     animate={{x:0, opacity:1}}
     transition={{duration:.6, delay:.3}}
        className='hidden  w-full xl:w-1/2 md:flex justify-center items-center relative pt-8'>
-            <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[420px] xl:h-[520px] z-10 opacity-95' />
-            <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[300px]  lg:h-[350px] lg:w-[430px] bg-gradient-to-r from-slate-950 to-gray-900 opacity-30 shadow-xl rounded-lg'></div>
+            <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[420px] xl:h-[520px] z-10 opacity-95 rounded-full' />
+            <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[350px] md:w-[307px] md:h-[307px]  lg:h-[422px] lg:w-[422px] bg-gradient-to-br from-slate-800 to-black rounded-full
+             shadow-xl'></div>
         </motion.div>
 
       

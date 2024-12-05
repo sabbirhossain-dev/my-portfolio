@@ -40,7 +40,7 @@ const Resume = () => {
 
 
         <Skills />
-        <div className='flex flex-col md:flex-row gap-10 md:gap-20 pt-10 md:pt-20 py-10'>
+        <div className='flex flex-col md:flex-row gap-10 md:gap-10 lg:gap-20 pt-10 md:pt-20 py-10'>
           <Education />
           <Experience />
         </div>

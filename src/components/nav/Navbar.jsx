@@ -17,8 +17,15 @@ const Navbar = () => {
         <div className='w-full h-20 md:h-24 py-2 md:py-5 flex justify-between items-center mx-auto sticky z-50 top-0 bg-bodyColor border-b-[1px] border-gray-600'>
 
         <div className=''>
-           <Link to='/' >
-           <img src={sabbirLogoo} alt='logo' className='w-[70px] lg:w-28 h-auto'/>
+        <Link 
+                    activeClass="active" 
+                    to='home' 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-95} 
+                    duration={500} 
+                    >
+           <img src={sabbirLogoo} alt='logo' className='w-[70px] lg:w-28 h-auto cursor-pointer'/>
            </Link>
         </div>
 

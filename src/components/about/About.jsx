@@ -1,10 +1,11 @@
 import React from 'react'
 import { CgWebsite } from "react-icons/cg";
 import { LuMonitorSmartphone } from "react-icons/lu";
-import { FaLaptopCode,FaCameraRetro } from "react-icons/fa";
+import { FaLaptopCode,FaCameraRetro, FaArrowUp } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 import Title from '../Title'
+import { Link } from 'react-scroll';
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       <div>
         <Title text='Know Me More'  />
       </div>
+      
 
       <div
        className='flex flex-col sm:flex-row gap-10 lg:gap-16  pt-8 md:pt-20 pb-10'>
