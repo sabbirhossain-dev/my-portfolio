@@ -19,9 +19,13 @@ const Home = () => {
 
       {/* toggle image */}
 
-      <div className='flex md:hidden items-center justify-center mt-12 w-[220px] h-[220px] bg-gradient-to-br from-purple-800 to-designColor rounded-full'>
+      <motion.div
+     initial={{y:"-20%",  opacity:0}}
+          whileInView={{y:0, opacity:1}}
+          transition={{duration:.4, delay:.2}} 
+       className='flex md:hidden items-center justify-center mt-12 w-[220px] h-[220px] bg-gradient-to-br from-purple-800 to-designColor rounded-full'>
         <img src={sabbir2} alt='banner picture' className='w-full h-[240px] -mt-6 rounded-full'/>
-      </div>
+      </motion.div>
 
       {/* left side */}
       <motion.div 
