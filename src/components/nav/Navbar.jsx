@@ -65,19 +65,21 @@ const Navbar = () => {
                     to={link} 
                     spy={true} 
                     smooth={true} 
-                    offset={-80} 
+                    offset={-81} 
                     duration={500}
                     >
                     {title}
                     </Link>
                     </li>
                 })}
-                <div className='mt-5 px-8'>
-              <p className='uppercase text-xs'>get in touch</p>
+                <div className='mt-7 px-8'>
+              <p className='uppercase text-xs font-light'>get in touch</p>
               <ul className='flex gap-3 mt-4'>
-                <li className='bannerToggleIcon'><FaFacebookF /></li>
-                <li className='bannerToggleIcon'><FaLinkedinIn /></li>
-                <li className='bannerToggleIcon'><FaInstagram /></li>
+                <li className='bannerToggleIcon'><a href='https://www.facebook.com/sabbir.hossain.445886/' target='_blank'><FaFacebookF /></a></li>
+
+                <li className='bannerToggleIcon'><a href="https://www.linkedin.com/in/md-sabbir-hossain-5777602a4/" target='_blank'><FaLinkedinIn /></a></li>
+
+                <li className='bannerToggleIcon'><a href='https://www.instagram.com/___sabbirhossain/' target='_blank'><FaInstagram /></a></li>
                 <li className='bannerToggleIcon'><FaTwitter /></li>
               </ul>
             </div>

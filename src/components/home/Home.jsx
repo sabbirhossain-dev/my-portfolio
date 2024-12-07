@@ -78,12 +78,12 @@ const Home = () => {
 
 {/* right side */}
       <motion.div
-      initial={{x:"100%", opacity:0}}
-    animate={{x:0, opacity:1}}
-    transition={{duration:.6, delay:.3}}
+      initial={{y:"-20%",  opacity:0}}
+          whileInView={{y:0, opacity:1}}
+          transition={{duration:.4, delay:.2}} 
        className='hidden  w-full xl:w-1/2 md:flex justify-center items-center relative pt-8'>
             <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[420px] xl:h-[520px] z-10 opacity-95 rounded-full' />
-            <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[350px] md:w-[307px] md:h-[307px]  lg:h-[422px] lg:w-[422px] bg-gradient-to-br from-slate-800 to-black rounded-full
+            <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[350px] md:w-[307px] md:h-[307px]  lg:h-[422px] lg:w-[422px] bg-gradient-to-br from-slate-950 to-bodyColor rounded-full
              shadow-xl'></div>
         </motion.div>
 

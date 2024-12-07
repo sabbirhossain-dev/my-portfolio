@@ -14,7 +14,7 @@ const Portfolio = () => {
   const [development ,setDevelopment] = useState(false)
   return (
     <>
-      <section id="portfolio" className='py-16 border-b border-gray-600 overflow-x-hidden'>
+      <section id="portfolio" className='py-10 md:py-16 border-b border-gray-600 overflow-x-hidden'>
       <div className=''>
           <Title text='My projects' />
       </div>

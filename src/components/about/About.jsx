@@ -1,11 +1,10 @@
 import React from 'react'
 import { CgWebsite } from "react-icons/cg";
 import { LuMonitorSmartphone } from "react-icons/lu";
-import { FaLaptopCode,FaCameraRetro, FaArrowUp } from "react-icons/fa";
+import { FaLaptopCode,FaCameraRetro} from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 import Title from '../Title'
-import { Link } from 'react-scroll';
 
 const About = () => {
   return (
@@ -26,7 +25,7 @@ const About = () => {
           whileInView={{y:0, opacity:1}}
           transition={{duration:.5, delay:.2}} 
          className='w-full lg:w-2/3 flex flex-col gap-2'>
-          <h1 className='text-md sm:text-xl md:text-3xl font-normal pb-4 md:pb-6'><span className='text-designColor font-medium text-lg sm:text-xl md:text-3xl'>Md Sabbir Hossain, </span>a Frontend Developer</h1>
+          <h1 className='text-xl sm:text-xl md:text-3xl font-normal pb-4 md:pb-6'><span className='text-designColor font-medium text-xl md:text-3xl'>Md Sabbir Hossain, </span>a Frontend Developer</h1>
           <p className='text-sm md:text-base'>I am a Professional Frontend Developer. I usually make high quality and
           Responsive Website for both mobile and desktop platforms. I will
           provide quality and satisfaction work.</p>
@@ -57,7 +56,7 @@ const About = () => {
         </motion.div>
       </div>
 
-
+   
 
 {/* feature part */}
       <div>
@@ -72,7 +71,7 @@ const About = () => {
         <motion.div 
           initial={{x:"-50%", opacity:0}}
           whileInView={{x:0, opacity:1}}
-          transition={{duration:.6, delay:.3}} className='flex flex-col gap-2 md:gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
+          transition={{duration:.6, delay:.3}} className='flex flex-col gap-2 md:gap-3 px-5 md:px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
         <FaLaptopCode  className='group-hover:text-designColor transition-all duration-300 text-[45px] md:text-[50px]'/>
         <h3 className='text-2xl font-medium'>Frontend Development</h3>
         <p className='text-sm md:text-base'>Produced websites compatible with multiple
@@ -86,7 +85,7 @@ const About = () => {
         initial={{x:"60%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} 
-         className='flex flex-col gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
+         className='flex flex-col gap-3 px-5 md:px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
         <LuMonitorSmartphone className='group-hover:text-designColor transition-all duration-300 text-[45px] md:text-[50px]'/>
         <h3 className='text-2xl font-medium'>Web Design</h3>
         <p className='text-sm md:text-base'> Designed and updated layouts to meet
@@ -99,7 +98,7 @@ const About = () => {
         initial={{x:"-40%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} 
-         className='flex flex-col gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
+         className='flex flex-col gap-3 px-5 md:px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
         <CgWebsite className='group-hover:text-designColor transition-all duration-300 text-[45px] md:text-[50px]'/>
         <h3 className='text-2xl font-medium'>E-Commerce</h3>
         <p className='text-sm md:text-base'>Produced e-commerce websites compatible wit multiple browsers. Designed and updated layouts meet
@@ -110,7 +109,7 @@ const About = () => {
         initial={{x:"70%", opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:.6, delay:.3}} 
-        className='flex flex-col gap-3 px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
+        className='flex flex-col gap-3  px-5 md:px-8 py-7 bg-black bg-opacity-30 rounded-md shadow-lg group hover:bg-opacity-90 duration-300 transition-colors'>
         <FaCameraRetro className='group-hover:text-designColor transition-all duration-300 text-[45px] md:text-[50px]'/>
         <h3 className='text-2xl font-medium'>Photography</h3>
         <p className='text-sm md:text-base'>I am not a professional photographer but I like to take pictures.</p>
