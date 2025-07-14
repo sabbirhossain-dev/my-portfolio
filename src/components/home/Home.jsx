@@ -60,7 +60,7 @@ const Home = () => {
                     offset={-95} 
                     duration={500}>See My Portfolio</Link></button>
 
-              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs md:w-36 lg:w-auto lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all'><a href='https://drive.google.com/file/d/12N_WEHMrJIK98Hb3TDS2EzRakjGvVzdz/view?usp=sharing' target='_blank' className='flex justify-center items-center gap-2'>Download Resume
+              <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs md:w-36 lg:w-auto lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all'><a href='https://drive.google.com/file/d/1ncTRWTNal3mIhVXaHL8CKI1nWd5CxrLG/view?usp=sharing' target='_blank' className='flex justify-center items-center gap-2'>Download Resume
               <LuDownload className='text-designColor animate-bounce'/></a></button>
 
             </div>
