@@ -57,7 +57,7 @@ const Home = () => {
                     activeClass="active" 
                     spy={true} 
                     smooth={true} 
-                    offset={-95} 
+                    offset={-90} 
                     duration={500}>See My Portfolio</Link></button>
 
               <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs md:w-36 lg:w-auto lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all'><a href='https://drive.google.com/file/d/1ncTRWTNal3mIhVXaHL8CKI1nWd5CxrLG/view?usp=sharing' target='_blank' className='flex justify-center items-center gap-2'>Download Resume
@@ -85,13 +85,15 @@ const Home = () => {
       initial={{y:"-20%",  opacity:0}}
           whileInView={{y:0, opacity:1}}
           transition={{duration:.4, delay:.2}} 
-       className='hidden  w-full xl:w-1/2 md:flex justify-center items-center relative pt-8'>
-            <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[420px] xl:h-[520px] z-10 opacity-95 rounded-full' />
+       className='hidden  w-full xl:w-1/2 md:flex justify-end items-center relative pt-8'>
+            <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[425px] xl:h-[520px] z-10 opacity-95 rounded-full p-[1px] ' />
             <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[350px] md:w-[307px] md:h-[307px]  lg:h-[425px] lg:w-[425px] bg-gradient-to-br from-purple-800 to-designColor rounded-full opacity-90
-             shadow-xl border border-cyan-700'></div>
+             shadow-xl'></div>
         </motion.div>
 
-      
+
+
+{/* arrow */}
     </div>
         <div className='hidden md:flex justify-center items-center'>
         <button className='px-2 py-4 rounded-full  border border-gray-600 text-designColor animate-bounce'>
@@ -100,7 +102,7 @@ const Home = () => {
                     activeClass="active" 
                     spy={true} 
                     smooth={true} 
-                    offset={-95} 
+                    offset={-90} 
                     duration={500}><BsArrowDown size={26} /></Link>
         </button>
         </div>

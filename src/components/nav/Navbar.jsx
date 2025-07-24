@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
-import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter} from "react-icons/fa";
-import sabbirLogoo from '../../assets/images/sabbirLogoo2.png'
+import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter, FaMoon, FaLightbulb} from "react-icons/fa";
+// import sabbirLogoo from '../../assets/images/sabbirLogoo2.png'
+import sabbir from '../../assets/images/saabbir-log.png'
 
 import { navData } from '../../constans'
 import { FaBars} from 'react-icons/fa';
@@ -10,6 +11,7 @@ import { RxCross1 } from 'react-icons/rx';
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false)
+    // const [themeToggle, setThemeToggle] = useState(false)
 
   return (
     <>
@@ -22,10 +24,10 @@ const Navbar = () => {
                     to='home' 
                     spy={true} 
                     smooth={true} 
-                    offset={-95} 
+                    offset={-90} 
                     duration={500} 
                     >
-           <img src={sabbirLogoo} alt='logo' className='w-[70px] lg:w-28 h-auto cursor-pointer'/>
+           <img src={sabbir} alt='logo' className='w-[80px] lg:w-32 h-auto cursor-pointer'/>
            </Link>
         </div>
 
@@ -38,13 +40,22 @@ const Navbar = () => {
                     to={link} 
                     spy={true} 
                     smooth={true} 
-                    offset={-95} 
+                    offset={-90} 
                     duration={500} 
                     >
                     {title}
                     </Link>
                     </li>
                 ))}
+
+                           {/* light dark theme */}
+
+            {/* <span className='flex items-center justify-center text-xl cursor-pointer bg-gray-600  rounded-full w-8 h-8 '>
+              {themeToggle ? <FaMoon className='text-black' onClick={()=>{setThemeToggle(!themeToggle)}} /> : <FaLightbulb className='text-white' onClick={()=>{setThemeToggle(!themeToggle)}}/>}
+            </span> */}
+                            {/* light dark theme */}
+
+
             </ul>
             <div className='md:hidden p-[7px] bg-black bg-opacity-65 text-designColor rounded-md'>
             {toggle? <RxCross1 onClick={()=>{setToggle(!toggle)}} size={26} /> :<FaBars onClick={()=>{setToggle(!toggle)}} size={26}/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import image from '../../assets/images/banner2.jpg'
 const Education = () => {
   return (
     <div 
@@ -11,7 +12,7 @@ const Education = () => {
         initial={{x:"-60%", opacity:0}}
         whileInView={{x:0, opacity:1}}
         transition={{duration:.6, delay:.3}}
-        className='flex flex-col gap-5'>
+        className='flex flex-col gap-5 '>
       <div className='flex flex-col gap-3 bg-black bg-opacity-25 hover:bg-opacity-60 transition-colors duration-300 p-6 md:p-8 rounded-md '>
         <h4 className='text-xl md:text-2xl font-semibold text-white'>Diploma in Computer Science</h4>
         <p className='tex-base md:text-lg font-medium'>National Polytechnic Institute</p>
