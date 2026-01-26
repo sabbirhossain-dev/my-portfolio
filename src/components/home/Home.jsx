@@ -2,6 +2,7 @@ import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 import sabbir from '../../assets/images/sabbir.png'
 import sabbir2 from '../../assets/images/sabbir2.png'
+import sabbir3 from '../../assets/images/sabbir-p1.png'
 import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter} from "react-icons/fa";
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
@@ -23,8 +24,8 @@ const Home = () => {
      initial={{y:"-20%",  opacity:0}}
           whileInView={{y:0, opacity:1}}
           transition={{duration:.4, delay:.2}} 
-       className='flex md:hidden items-center justify-center mt-12 w-[220px] h-[220px] bg-gradient-to-br from-purple-800 to-designColor rounded-full border border-cyan-700 '>
-        <img src={sabbir2} alt='banner picture' className='w-full h-[240px] -mt-6 rounded-full'/>
+       className='flex md:hidden items-center justify-center mt-12 w-[220px] h-[220px] bg-gradient-to-br from-gray-900 to-blue-800 rounded-full opacity-60 border border-gray-700 '>
+        <img src={sabbir3} alt='banner picture' className='w-full h-[220px] p-[1px] rounded-full'/>
       </motion.div>
 
       {/* left side */}
@@ -82,14 +83,37 @@ const Home = () => {
 
 {/* right side */}
       <motion.div
-      initial={{y:"-20%",  opacity:0}}
-          whileInView={{y:0, opacity:1}}
-          transition={{duration:.4, delay:.2}} 
-       className='hidden  w-full xl:w-1/2 md:flex justify-end items-center relative pt-8'>
-            <img src={sabbir} alt='bannerImg' className='w-[300px] h-[380px] lg:w-[425px] xl:h-[520px] z-10 opacity-95 rounded-full p-[1px] ' />
-            <div className='absolute bottom-0 flex justify-center items-center h-[350px] w-[350px] md:w-[307px] md:h-[307px]  lg:h-[425px] lg:w-[425px] bg-gradient-to-br from-purple-800 to-designColor rounded-full opacity-90
-             shadow-xl'></div>
-        </motion.div>
+  initial={{ y: "-20%", opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.4, delay: 0.2 }}
+  className="hidden w-full xl:w-1/2 md:flex justify-end items-center relative pt-8 group"
+>
+  {/* Profile Image */}
+  <img
+    src={sabbir3}
+    alt="bannerImg"
+    className="w-[300px] h-[380px] lg:w-[425px] xl:h-[440px] z-10 opacity-95 rounded-full p-[1px]"
+  />
+
+  {/* Gradient Border Wrapper */}
+  <div
+    className="
+      absolute bottom-0
+      h-[350px] w-[350px] md:w-[307px] md:h-[307px]
+      lg:h-[425px] lg:w-[425px]
+      rounded-full p-[2px]
+      bg-gradient-to-br from-blue-800 via-pink-700 to-purple-800
+      group-hover:from-pink-800 group-hover:via-purple-800 group-hover:to-blue-900
+      transition-all duration-500
+      shadow-xl
+      opacity-80
+    "
+  >
+    {/* Inner Circle */}
+    <div className="h-full w-full rounded-full bg-gray-900 opacity-60"></div>
+  </div>
+</motion.div>
+
 
 
 
