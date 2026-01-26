@@ -88,7 +88,7 @@ const Home = () => {
   transition={{ duration: 0.4, delay: 0.2 }}
   className="hidden w-full xl:w-1/2 md:flex justify-end items-center relative pt-8 group"
 >
-  {/* Profile Image */}
+  {/* Profile image */}
   <img
     src={sabbir3}
     alt="bannerImg"
