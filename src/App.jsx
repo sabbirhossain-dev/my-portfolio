@@ -25,7 +25,7 @@ const App = () => {
   return (
     <>
     {loading ? <Loading /> : <div className= "w-full h-auto bg-bodyColor text-lightText">
-        <div className='px-5 sm:px-8 md:px-6 lg:max-w-screen-xl mx-auto lg:px-16'>
+        <div className='px-5 sm:px-8 md:px-6 lg:max-w-screen-xl mx-auto lg:px-5'>
       <Navbar />
       <Home />
       <About />
