@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { FaFacebookF,FaLinkedinIn , FaInstagram, FaTwitter, FaMoon, FaLightbulb} from "react-icons/fa";
 // import sabbirLogoo from '../../assets/images/sabbirLogoo2.png'
-import sabbir from '../../assets/images/sabbir-log.png'
+import sabbir from '../../assets/images/saabbir-log.png'
 
 import { navData } from '../../constans'
 import { FaBars} from 'react-icons/fa';
