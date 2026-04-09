@@ -95,7 +95,7 @@ const FormPart = () => {
          </motion.div>
 
          {
-            errorMsg && <p className='w-full py-3 bg-[#1e2024] shadow-shadowOne rounded-lg text-red-600 text-base tracking-wide text-center animate-bounce'>{errorMsg}</p>
+            errorMsg && <p className='w-full py-3 bg-[#1e2024] shadow-shadowOne rounded-lg text-red-600 text-base tracking-wide text-center animate-pulse'>{errorMsg}</p>
          }
 
          {

@@ -1,10 +1,12 @@
 import React from 'react'
 import { FaPhoneAlt,FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import { RiArrowUpDoubleLine } from 'react-icons/ri';
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot} from "react-icons/fa6";
 
 import Title from '../Title'
 import FormPart from './FormPart';
+import { Link } from 'react-scroll';
 
 
 const Contact = () => {
@@ -19,8 +21,7 @@ const Contact = () => {
 
   <div 
   
-  className='flex flex-col
-  lg:flex-row gap-10 md:gap-20 pt-8 md:pt-20'>
+  className='flex flex-col lg:flex-row gap-10 md:gap-20 pt-8 md:pt-20'>
 
 
 {/* left part */}
@@ -56,6 +57,21 @@ const Contact = () => {
 
   </div>
 
+  </div>
+  <div className='flex justify-end items-end text-right mt-8 '>
+    <div className='flex justify-center items-center'>
+    <Link 
+                        to='home'
+                        activeClass="active" 
+                        spy={true} 
+                        smooth={true} 
+                        offset={-90} 
+                        duration={1700}>
+            <button className='px-1 py-3 pt-5 rounded-full  border border-gray-600 text-designColor '>
+                        <RiArrowUpDoubleLine size={26} className='animate-bounce'/>
+            </button>
+            </Link>
+            </div>
   </div>
 </section>
 

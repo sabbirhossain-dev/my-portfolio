@@ -15,7 +15,7 @@ import { LuDownload } from "react-icons/lu";
 
 const Home = () => {
   return (
-    <section id='home' className='w-full h-auto pb-20 border-b-[1px] border-gray-600'>
+    <section id='home' className='w-full h-auto pb-20 border-b-[1px] border-gray-600 bg-[url("../../assets/images/sabbir-p1.png")]'>
       <div  className='flex flex-col gap-6 md:gap-10 md:flex-row items-center lg:gap-16'>
 
       {/* toggle image */}
@@ -24,7 +24,7 @@ const Home = () => {
      initial={{y:"-20%",  opacity:0}}
           whileInView={{y:0, opacity:1}}
           transition={{duration:.4, delay:.2}} 
-       className='flex md:hidden items-center justify-center mt-12 w-[220px] h-[220px] bg-gradient-to-br from-gray-900 to-blue-800 rounded-full opacity-60 border border-gray-700 '>
+       className='flex md:hidden items-center justify-center mt-12 w-[220px] h-[220px] bg-gradient-to-br from-gray-900 via-purple-900 to-red-600 rounded-full opacity-60 border border-gray-700 '>
         <img src={sabbir3} alt='banner picture' className='w-full h-[220px] p-[1px] rounded-full'/>
       </motion.div>
 
@@ -58,7 +58,7 @@ const Home = () => {
                     activeClass="active" 
                     spy={true} 
                     smooth={true} 
-                    offset={-90} 
+                    offset={-80} 
                     duration={500}>See My Portfolio</Link></button>
 
               <button className='px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs md:w-36 lg:w-auto lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all'><a href='https://drive.google.com/file/d/1ncTRWTNal3mIhVXaHL8CKI1nWd5CxrLG/view?usp=sharing' target='_blank' className='flex justify-center items-center gap-2'>Download Resume
@@ -92,7 +92,7 @@ const Home = () => {
   <img
     src={sabbir3}
     alt="bannerImg"
-    className="w-[300px] h-[380px] lg:w-[425px] xl:h-[440px] z-10 opacity-95 rounded-full p-[1px]"
+    className="w-[300px] h-[380px] lg:w-[425px] xl:h-[430px] z-10 opacity-95 rounded-full p-[1px]"
   />
 
   {/* Gradient Border Wrapper */}
@@ -100,7 +100,7 @@ const Home = () => {
     className="
       absolute bottom-0
       h-[350px] w-[350px] md:w-[307px] md:h-[307px]
-      lg:h-[425px] lg:w-[425px]
+      lg:h-[420px] lg:w-[425px]
       rounded-full p-[2px]
       bg-gradient-to-br from-blue-800 via-pink-700 to-purple-800
       group-hover:from-pink-800 group-hover:via-purple-800 group-hover:to-blue-900
@@ -119,14 +119,14 @@ const Home = () => {
 
 {/* arrow */}
     </div>
-        <div className='hidden md:flex justify-center items-center'>
-        <button className='px-2 py-4 rounded-full  border border-gray-600 text-designColor animate-bounce'>
+        <div className='mt-16 md:mt-0 flex justify-center items-center'>
+        <button className='px-1 py-2 md:px-2 md:py-4 rounded-full  border border-gray-600 text-designColor animate-bounce'>
         <Link
                     to='about'
                     activeClass="active" 
                     spy={true} 
                     smooth={true} 
-                    offset={-90} 
+                    offset={-80} 
                     duration={500}><BsArrowDown size={26} /></Link>
         </button>
         </div>
