@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: 'class',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -12,15 +9,15 @@ export default {
         lightText: "#c4cfde",
         boxBg: "linear-gradient(145deg, #1e2024, #23272b)",
         designColor: "#ff014f",
+        // designColor: "#7502e8",
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
       },
-       backgroundImage: {
-        bannerImg : "url('./src/assets/images/banner2.jpg')",
-      }
+      backgroundImage: {
+        bannerImg: "url('./src/assets/images/banner2.jpg')",
+      },
     },
   },
   plugins: [],
-}
-
+};

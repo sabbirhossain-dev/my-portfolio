@@ -74,7 +74,7 @@ const Home = () => {
           </p>
 
           <div className="flex items-center gap-4 mt-3 md:mt-3 lg:mt-4">
-            <button className="px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base md:w-28 lg:w-auto  bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all">
+            <button className="px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs lg:text-base md:w-28 lg:w-auto  bg-black bg-opacity-25 shadow-md rounded-md text-center hover:bg-opacity-60 hover:text-designColor duration-300 transition-all">
               <Link
                 to="portfolio"
                 activeClass="active"
@@ -87,7 +87,7 @@ const Home = () => {
               </Link>
             </button>
 
-            <button className="px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs md:w-36 lg:w-auto lg:text-base bg-black bg-opacity-25 shadow-shadowOne rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all">
+            <button className="px-3 md:px-3 lg:px-5 py-3 text-sm md:text-xs md:w-36 lg:w-auto lg:text-base bg-black bg-opacity-25 shadow-md rounded-md text-center hover:bg-opacity-60 text-designColor duration-300 transition-all">
               <a
                 href="https://drive.google.com/file/d/1ncTRWTNal3mIhVXaHL8CKI1nWd5CxrLG/view?usp=sharing"
                 target="_blank"
@@ -160,7 +160,7 @@ const Home = () => {
             lg:h-[430px] lg:w-[425px]
             rounded-full p-[1px]
             transition-all duration-500
-            shadow-xl bg-black bg-opacity-90 border border-opacity-50 border-designColor 
+            shadow-xl bg-black bg-opacity-90 border border-opacity-80 border-purple-800 
             opacity-100  
           "
             // bg-gradient-to-br from-blue-800 via-pink-700 to-purple-800

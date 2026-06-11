@@ -24,7 +24,7 @@ export default function Cursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-8 h-8 bg-black bg-opacity-40 rounded-full pointer-events-none z-[999]"
+      className="fixed top-0 left-0 w-8 h-8 bg-designColor bg-opacity-50 rounded-full pointer-events-none z-[999]"
       animate={{
         x: mousePosition.x - 20,
         y: mousePosition.y - 20,

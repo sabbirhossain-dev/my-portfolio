@@ -3,6 +3,7 @@ import { CgWebsite } from "react-icons/cg";
 import { LuMonitorSmartphone } from "react-icons/lu";
 import { FaLaptopCode, FaCameraRetro } from "react-icons/fa";
 import { motion } from "framer-motion";
+import profile from "../../assets/images/sabbir-p1.png";
 
 import Title from "../Title";
 
@@ -54,29 +55,46 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="w-full lg:w-1/3 flex flex-col"
           >
-            <p className="text-gray-300 md:text-[17px] border-b border-gray-600 pt-0 pb-3 ">
-              <span className="text-designColor font-medium">Name: </span> Md
-              Sabbir Hossain
-            </p>
+            {/* <div className="w-auto h-[380px] border border-dotted border-designColor flex justify-center items-center">
+              <img src={profile} alt="about-img" className="w-full h-full" />
+            </div> */}
 
-            <p className="text-gray-300 md:text-[18px] border-b border-gray-600 py-3">
-              <span className="text-designColor font-medium">Age: </span>26
-            </p>
+            <div>
+              <p className="text-gray-300 md:text-[17px] border-b border-gray-600 pt-0 pb-3 ">
+                <span className="text-designColor opacity-90 font-medium">
+                  Name:{" "}
+                </span>{" "}
+                Md Sabbir Hossain
+              </p>
 
-            <p className="text-gray-300 md:text-[17px] border-b border-gray-600 py-3">
-              <span className="text-designColor font-medium">Email: </span>
-              hossainsabbir309@gmail.com
-            </p>
+              {/* <p className="text-gray-300 md:text-[18px] border-b border-gray-600 py-3">
+                <span className="text-designColor opacity-90 font-medium">
+                  Age:{" "}
+                </span>
+                26
+              </p> */}
 
-            <p className="text-gray-300 md:text-[17px] border-b border-gray-600 py-3">
-              <span className="text-designColor font-medium">Phone: </span>
-              01981441578
-            </p>
+              <p className="text-gray-300 md:text-[17px] border-b border-gray-600 py-3">
+                <span className="text-designColor opacity-90 font-medium">
+                  Email:{" "}
+                </span>
+                hossainsabbir309@gmail.com
+              </p>
 
-            <p className="text-gray-300 md:text-[17px] border-b border-gray-600 py-3">
-              <span className="text-designColor font-medium">Location: </span>
-              Mirpur 11, Dhaka
-            </p>
+              <p className="text-gray-300 md:text-[17px] border-b border-gray-600 py-3">
+                <span className="text-designColor opacity-90 font-medium">
+                  Phone:{" "}
+                </span>
+                01981441578
+              </p>
+
+              <p className="text-gray-300 md:text-[17px] border-b border-gray-600 py-3">
+                <span className="text-designColor opacity-90 font-medium">
+                  Location:{" "}
+                </span>
+                Mirpur 11, Dhaka
+              </p>
+            </div>
           </motion.div>
         </div>
 
