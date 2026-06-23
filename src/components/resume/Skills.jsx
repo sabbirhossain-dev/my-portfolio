@@ -7,7 +7,7 @@ import { TbBrandRedux } from "react-icons/tb";
 import { SiJquery } from "react-icons/si";
 import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
-import Skill from "./skill";
+// import Skill from "./skill";
 
 const Skills = () => {
   return (
