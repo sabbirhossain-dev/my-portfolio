@@ -66,13 +66,34 @@ const Navbar = () => {
             </span> */}
             {/* light dark theme */}
           </ul>
-          <div className="md:hidden p-[7px] bg-black bg-opacity-65 text-designColor rounded-md">
+
+          <div
+            onClick={() => setToggle(!toggle)}
+            className=" md:hidden text-designColor rounded-md relative w-8 h-8 flex items-center justify-center cursor-pointer bg-black bg-opacity-65 overflow-hidden"
+          >
+            <FaBars
+              size={35}
+              className={`absolute transition-all p-[7px] duration-300 ease-in-out
+             ${toggle ? "opacity-0 rotate-90 scale-75" : "opacity-100 rotate-0 scale-100"}
+             `}
+            />
+
+            <RxCross1
+              size={35}
+              className={`absolute transition-all p-[7px] duration-300 ease-in-out
+              ${toggle ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-90 scale-75"}
+              `}
+            />
+          </div>
+
+          {/* <div className="md:hidden p-[7px] bg-black bg-opacity-65 text-designColor rounded-md">
             {toggle ? (
               <RxCross1
                 onClick={() => {
                   setToggle(!toggle);
                 }}
                 size={26}
+                className="rotate-90 duration-300"
               />
             ) : (
               <FaBars
@@ -82,7 +103,7 @@ const Navbar = () => {
                 size={26}
               />
             )}
-          </div>
+          </div> */}
         </div>
 
         <AnimatePresence>

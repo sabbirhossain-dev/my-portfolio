@@ -66,12 +66,12 @@ const All = () => {
           liveLink="https://sabbirhossain-dev.github.io/Gym-by-sabbir/"
           codeLink="https://github.com/sabbirhossain-dev/Gym-by-sabbir.git"
         />
-        <Card
+        {/* <Card
           image={gyan}
           title="Learning Website"
           desc="Developed an educational platform interface focused on course presentation, learning resources, and user-friendly navigation."
           tech="Tech Stack: HTML5 • CSS3 • JavaScript • Bootstrap"
-        />
+        /> */}
       </div>
     </>
   );
