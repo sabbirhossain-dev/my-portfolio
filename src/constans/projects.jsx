@@ -88,6 +88,7 @@ export const projects = [
       "Animated section transitions",
     ],
   },
+  //hello
   {
     id: "bizzency",
     title: "Business Website",
