@@ -6,16 +6,16 @@ import { Typewriter } from "react-simple-typewriter";
 import profile from "../../assets/images/profile01.png";
 import {
   FaFacebookF,
+  FaGithub,
   FaLinkedinIn,
   FaInstagram,
-  FaTwitter,
 } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { BsArrowDown } from "react-icons/bs";
 import { LuDownload } from "react-icons/lu";
 
-const Home = () => {
+const Banner = () => {
   return (
     <section
       id="home"
@@ -130,7 +130,9 @@ const Home = () => {
               </li>
 
               <li className="bannerIcon">
-                <FaTwitter />
+                <a href="https://github.com/sabbirhossain-dev" target="_blank">
+                  <FaGithub />
+                </a>
               </li>
             </ul>
           </div>
@@ -191,4 +193,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Banner;
