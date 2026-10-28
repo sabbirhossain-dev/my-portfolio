@@ -139,6 +139,11 @@ const Banner = () => {
         </motion.div>
 
         {/* right side */}
+        {/* right side */}
+        {/* right side */}
+        {/* right side */}
+        {/* right side */}
+        {/* right side */}
         <motion.div
           initial={{ y: "-20%", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
