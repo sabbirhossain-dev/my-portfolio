@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaInstagram,
   FaTwitter,
-  FaMoon,
-  FaLightbulb,
+  // FaMoon,
+  // FaLightbulb,
 } from "react-icons/fa";
 // import sabbirLogoo from "../../assets/images/sabbirLogoo2.png";
 import sabbir from "../../assets/images/saabbir-log.png";
@@ -17,13 +18,24 @@ import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
   // const [themeToggle, setThemeToggle] = useState(false)
+
+  // react-scroll links only work on the main page (sections exist there).
+  // On other routes, navigate home and let Main scroll to the section.
+  const handleNav = (link) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: link } });
+    }
+  };
 
   return (
     <>
       <div className="w-full h-20 md:h-24 py-2 md:py-5 flex justify-between items-center mx-auto sticky z-50 top-0 bg-[#0B1120] border-b-[1px] border-gray-600">
         <div className="">
           <Link
+            onClick={() => handleNav("home")}
             activeClass="active"
             to="home"
             spy={true}
@@ -47,6 +59,7 @@ const Navbar = () => {
                 className=" text-base text-gray-400 tracking-wider cursor-pointer hover:text-designColor transition-colors duration-300"
               >
                 <Link
+                  onClick={() => handleNav(link)}
                   activeClass="active"
                   to={link}
                   spy={true}
@@ -124,6 +137,7 @@ const Navbar = () => {
                     <Link
                       onClick={() => {
                         setToggle(false);
+                        handleNav(link);
                       }}
                       activeClass="active"
                       to={link}
