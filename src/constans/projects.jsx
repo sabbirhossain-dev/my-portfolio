@@ -1,17 +1,17 @@
 import grocery from "../assets/images/grocery2.png";
-import groceryAlt from "../assets/images/grocery1.png";
+// import groceryAlt from "../assets/images/grocery1.png";
 import forever from "../assets/images/foreverrr.png";
-import foreverAlt from "../assets/images/foreverr.png";
-import foreverPhone from "../assets/images/foreverphn.png";
+// import foreverAlt from "../assets/images/foreverr.png";
+// import foreverPhone from "../assets/images/foreverphn.png";
 import personalWebsite from "../assets/images/personalWebsite.png";
 import bizzency from "../assets/images/bizzency2.png";
-import bizzencyAlt from "../assets/images/bizzency.png";
+// import bizzencyAlt from "../assets/images/bizzency.png";
 import hunt from "../assets/images/hunt3.png";
-import huntAlt from "../assets/images/hunt2.png";
+// import huntAlt from "../assets/images/hunt2.png";
 import gym from "../assets/images/gym.png";
-import gymAlt from "../assets/images/gym2.png";
+// import gymAlt from "../assets/images/gym2.png";
 import gyan from "../assets/images/gyan2.png";
-import gyanAlt from "../assets/images/Gyan.png";
+// import gyanAlt from "../assets/images/Gyan.png";
 
 // Single source of truth for portfolio projects.
 // categories: which filter tabs the project appears in ("design" / "development").
