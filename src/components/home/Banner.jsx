@@ -1,4 +1,3 @@
-import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 // import sabbir from '../../assets/images/sabbir.png'
 // import sabbir2 from '../../assets/images/sabbir2.png'
@@ -67,10 +66,11 @@ const Banner = () => {
             />
           </h3>
           <p className="text-sm md:text-sm lg:text-base text-gray-300 w-auto md:w-auto lg:w-[520px] py-2">
-            Hi Dear, I am a Professional Frontend Developer. My experience of
-            Frontend Development is over 1 year. I usually make high quality and
-            Responsive Website for both mobile and desktop platforms. I will
-            provide quality and satisfaction work.
+            I am a passionate Full-Stack Developer focused on building modern,
+            responsive, and user-friendly web applications. I use React,
+            Next.js, JavaScript, and TypeScript to create interactive interfaces
+            that deliver seamless user experiences across mobile, tablet, and
+            desktop devices.
           </p>
 
           <div className="flex items-center gap-4 mt-3 md:mt-3 lg:mt-4">

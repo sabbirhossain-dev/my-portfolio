@@ -168,7 +168,7 @@ import {
   FaLightbulb,
   FaCode,
   FaWandMagicSparkles,
-  FaTriangleExclamation,
+  // FaTriangleExclamation,
 } from "react-icons/fa6";
 
 import Title from "../Title";
@@ -270,7 +270,7 @@ const ProjectDetails = () => {
         {project.challenges?.length > 0 && (
           <section className={cardStyle}>
             <h3 className={`${sectionTitle} mb-5`}>
-              <FaTriangleExclamation className="text-designColor" />
+              {/* <FaTriangleExclamation className="text-designColor" /> */}
               Challenges Faced & Solutions
             </h3>
 
