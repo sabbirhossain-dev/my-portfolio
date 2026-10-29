@@ -47,6 +47,31 @@ export const projects = [
       "Responsive layout for mobile and desktop",
       "Smooth transitions powered by Framer Motion",
     ],
+
+    challenges: [
+      {
+        challenge: "Managing cart state across different components",
+        solution:
+          "Used React Context API to share cart state and keep cart-related UI consistent across components.",
+      },
+      {
+        challenge:
+          "Keeping the shopping interface usable on different screen sizes",
+        solution:
+          "Used responsive Tailwind CSS layouts and reusable components to support mobile and desktop screens.",
+      },
+      {
+        challenge: "Maintaining smooth navigation and user interactions",
+        solution:
+          "Used React Router for page navigation and Framer Motion for interface animations.",
+      },
+    ],
+    futureImprovements: [
+      "Integrate a backend API and database for persistent products and cart data.",
+      "Add user authentication and order history.",
+      "Implement a secure checkout and payment gateway.",
+      "Add product search, sorting, and stock availability.",
+    ],
   },
 
   {
@@ -66,6 +91,30 @@ export const projects = [
       "User-friendly news browsing interface",
       "Responsive layout for different screen sizes",
       "Structured interface for exploring news articles",
+    ],
+
+    challenges: [
+      {
+        challenge: "Organizing news content for convenient browsing",
+        solution:
+          "Structured the interface into clear content sections to make news discovery easier.",
+      },
+      {
+        challenge: "Maintaining a responsive reading experience",
+        solution:
+          "Used Tailwind CSS layouts and responsive styling for different screen sizes.",
+      },
+      {
+        challenge: "Managing authentication and persistent data",
+        solution:
+          "Used Better Auth and MongoDB as part of the application's authentication and data stack.",
+      },
+    ],
+    futureImprovements: [
+      "Integrate a reliable news API with regularly updated articles.",
+      "Add news categories, keyword search, and filtering.",
+      "Build dedicated article detail pages.",
+      "Add bookmarks and personalized news preferences.",
     ],
   },
   {
@@ -93,6 +142,31 @@ export const projects = [
       "Advanced product filtering",
       "Fully responsive fashion storefront",
     ],
+
+    challenges: [
+      {
+        challenge: "Displaying products and product details consistently",
+        solution:
+          "Used reusable React components and structured product presentation across the storefront.",
+      },
+      {
+        challenge:
+          "Sharing cart data across different parts of the application",
+        solution: "Used Context API to manage shared cart state.",
+      },
+      {
+        challenge:
+          "Supporting a consistent shopping experience on mobile and desktop",
+        solution:
+          "Used responsive Tailwind CSS layouts and React Router for navigation.",
+      },
+    ],
+    futureImprovements: [
+      "Add secure user authentication and order tracking.",
+      "Integrate backend inventory and product management.",
+      "Add payment gateway integration and checkout validation.",
+      "Improve product search, sorting, and size or color selection.",
+    ],
   },
 
   {
@@ -113,6 +187,30 @@ export const projects = [
       "Team selection workflow",
       "Responsive cricket-themed UI",
     ],
+
+    challenges: [
+      {
+        challenge: "Presenting player information in an organized interface",
+        solution:
+          "Used structured player cards and a consistent layout to make player information easier to browse.",
+      },
+      {
+        challenge: "Handling interactive squad selection",
+        solution:
+          "Used React state and event handlers to manage user interactions in the squad-building interface.",
+      },
+      {
+        challenge: "Keeping the interface usable on smaller screens",
+        solution:
+          "Applied responsive Tailwind CSS layouts for different viewport sizes.",
+      },
+    ],
+    futureImprovements: [
+      "Add player search, filtering, and sorting.",
+      "Introduce squad size limits and player selection validation.",
+      "Add player statistics and role-based team composition.",
+      "Allow users to save and revisit their selected squads.",
+    ],
   },
   {
     id: "dev-stack",
@@ -132,6 +230,31 @@ export const projects = [
       "Responsive and reusable UI components",
       "Foundation for expanding developer resources",
     ],
+
+    challenges: [
+      {
+        challenge: "Organizing developer resources for easy discovery",
+        solution:
+          "Used a structured interface to present resources in a clear and accessible format.",
+      },
+      {
+        challenge: "Maintaining reusable and consistent UI components",
+        solution:
+          "Used component-based development and Tailwind CSS to maintain consistent styling.",
+      },
+      {
+        challenge:
+          "Designing an interface that can support more resources over time",
+        solution:
+          "Organized the presentation so additional resource categories and features can be introduced later.",
+      },
+    ],
+    futureImprovements: [
+      "Add keyword search and category-based filtering.",
+      "Integrate a database for managing developer resources.",
+      "Allow users to bookmark favorite resources.",
+      "Add authentication and user-submitted resource suggestions.",
+    ],
   },
   {
     id: "bazar-dor",
@@ -150,6 +273,30 @@ export const projects = [
       "Organized information browsing",
       "Responsive user interface",
       "Potential for product search and price comparison",
+    ],
+
+    challenges: [
+      {
+        challenge: "Presenting market and product price information clearly",
+        solution:
+          "Focused on structured content presentation and readable layouts for price-related information.",
+      },
+      {
+        challenge: "Designing an interface that adapts to different devices",
+        solution:
+          "Used responsive Tailwind CSS styling to support different screen sizes.",
+      },
+      {
+        challenge: "Preparing the application for future data-driven features",
+        solution:
+          "Used a technology stack that includes Next.js and MongoDB for potential application and data expansion.",
+      },
+    ],
+    futureImprovements: [
+      "Integrate verified and regularly updated market price data.",
+      "Add product search and category filters.",
+      "Introduce price comparison and historical price charts.",
+      "Add location-based market information where reliable data is available.",
     ],
   },
 
